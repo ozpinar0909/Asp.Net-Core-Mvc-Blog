@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Blog.Bll\Blog.Entity.csproj" />
+    <ProjectReference Include="..\Blog.Entity\Blog.Entity.csproj" />
   </ItemGroup>
 
 </Project>
