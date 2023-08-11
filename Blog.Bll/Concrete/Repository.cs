@@ -1,11 +1,10 @@
-﻿
+﻿using Blog.Bll.Abstract;
 using Blog.Core.Entities;
 using Blog.Dal.Context;
-using Blog.Entity.Abstract;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace Blog.Entity.Concrete
+namespace Blog.Bll.Concrete
 {
     public class Repository<T> : IRepository<T> where T : class, IEntityBase, new()
     {

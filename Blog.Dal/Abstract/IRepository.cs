@@ -1,7 +1,7 @@
 ﻿using Blog.Core.Entities;
 using System.Linq.Expressions;
 
-namespace Blog.Bll.Abstract
+namespace Blog.Entity.Abstract
 {
     public interface IRepository<T> where T : class, IEntityBase, new()
     {
