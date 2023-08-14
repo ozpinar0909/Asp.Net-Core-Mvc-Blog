@@ -24,6 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Blog.Dal\Blog.Dal.csproj" />
     <ProjectReference Include="..\Blog.Entity\Blog.Entity.csproj" />
+    <ProjectReference Include="..\Blog.Service\Blog.Service.csproj" />
     
   </ItemGroup>
 
