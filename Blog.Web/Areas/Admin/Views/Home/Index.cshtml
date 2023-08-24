@@ -1,0 +1,11 @@
+﻿@* @using Blog.Entity.Entities;
+@model List<Article>
+ 
+@foreach (var article in Model)
+{
+    <h1>@article.Title </h1>
+    <br />
+    <h4>@article.Content</h4>
+    <br />
+    <br />
+}  *@
