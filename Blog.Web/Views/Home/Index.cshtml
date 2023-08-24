@@ -1,5 +1,4 @@
-﻿@using Blog.Entity.Entities;
-@model List<Article>
+﻿@model List<ArticleDto>
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -13,6 +12,7 @@
 {
     <h1>@article.Title </h1><br />
     <h4>@article.Content</h4>
+    <h4>@article.CreatedBy</h4>
     <br />
     <br />
 }

@@ -1,9 +1,9 @@
-﻿using Blog.Entity.Entities;
+﻿using Blog.Entity.DTOs;
 
 namespace Blog.Service.Services.Abstract
 {
     public interface IArticleService
     {
-        Task<List<Article>> GetAllArticleSync();
+        Task<List<ArticleDto>> GetAllArticleSync();
     }
 }
