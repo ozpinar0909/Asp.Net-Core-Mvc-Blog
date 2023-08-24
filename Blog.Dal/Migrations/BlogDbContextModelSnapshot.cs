@@ -76,14 +76,26 @@ namespace Blog.Dal.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("31f19200-5d31-4472-ab5e-50bb6a5dee9e"),
+                            Id = new Guid("af3fb594-b323-46a3-b38b-b9673b0cc4d6"),
                             CategoryId = new Guid("4b116317-854b-469b-9e02-3492a0c34583"),
                             Content = "What is Lorem Ipsum?\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                             CreatedBy = "Admin Test",
-                            CreatedTime = new DateTime(2023, 8, 11, 14, 21, 16, 56, DateTimeKind.Local).AddTicks(8573),
+                            CreatedTime = new DateTime(2023, 8, 21, 9, 38, 3, 821, DateTimeKind.Local).AddTicks(9321),
                             ImageId = new Guid("184baf77-de82-4da0-8d25-7cc577fb58c1"),
                             IsDeleted = false,
                             Title = "Asp.Net Core Örnek Proje",
+                            ViewCount = 15
+                        },
+                        new
+                        {
+                            Id = new Guid("e1870013-96a5-41e7-bd53-d252a071320b"),
+                            CategoryId = new Guid("5f2053aa-d024-4f6f-8ae4-f31f8f4c53fe"),
+                            Content = "Visual Studio What is Lorem Ipsum?\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                            CreatedBy = "Admin Test1",
+                            CreatedTime = new DateTime(2023, 8, 21, 9, 38, 3, 821, DateTimeKind.Local).AddTicks(9359),
+                            ImageId = new Guid("30acd681-f1df-42d0-8238-9f2f7df4cc79"),
+                            IsDeleted = false,
+                            Title = "Visual Studio Örnek Proje",
                             ViewCount = 15
                         });
                 });
@@ -128,7 +140,7 @@ namespace Blog.Dal.Migrations
                         {
                             Id = new Guid("4b116317-854b-469b-9e02-3492a0c34583"),
                             CreatedBy = "Admin Test",
-                            CreatedTime = new DateTime(2023, 8, 11, 14, 21, 16, 56, DateTimeKind.Local).AddTicks(8971),
+                            CreatedTime = new DateTime(2023, 8, 21, 9, 38, 3, 821, DateTimeKind.Local).AddTicks(9737),
                             IsDeleted = false,
                             Name = "Asp.Net Core"
                         },
@@ -136,7 +148,7 @@ namespace Blog.Dal.Migrations
                         {
                             Id = new Guid("5f2053aa-d024-4f6f-8ae4-f31f8f4c53fe"),
                             CreatedBy = "Admin Test",
-                            CreatedTime = new DateTime(2023, 8, 11, 14, 21, 16, 56, DateTimeKind.Local).AddTicks(8977),
+                            CreatedTime = new DateTime(2023, 8, 21, 9, 38, 3, 821, DateTimeKind.Local).AddTicks(9744),
                             IsDeleted = false,
                             Name = "Visual Studio"
                         });
@@ -185,7 +197,7 @@ namespace Blog.Dal.Migrations
                         {
                             Id = new Guid("184baf77-de82-4da0-8d25-7cc577fb58c1"),
                             CreatedBy = "Admin Test",
-                            CreatedTime = new DateTime(2023, 8, 11, 14, 21, 16, 56, DateTimeKind.Local).AddTicks(9465),
+                            CreatedTime = new DateTime(2023, 8, 21, 9, 38, 3, 822, DateTimeKind.Local).AddTicks(223),
                             FileName = "/images/testimage",
                             FileType = "jpg",
                             IsDeleted = false
@@ -194,7 +206,7 @@ namespace Blog.Dal.Migrations
                         {
                             Id = new Guid("30acd681-f1df-42d0-8238-9f2f7df4cc79"),
                             CreatedBy = "Admin Test",
-                            CreatedTime = new DateTime(2023, 8, 11, 14, 21, 16, 56, DateTimeKind.Local).AddTicks(9471),
+                            CreatedTime = new DateTime(2023, 8, 21, 9, 38, 3, 822, DateTimeKind.Local).AddTicks(230),
                             FileName = "/images/vstest",
                             FileType = "png",
                             IsDeleted = false
