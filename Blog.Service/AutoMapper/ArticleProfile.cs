@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Blog.Entity.DTOs;
+using Blog.Entity.DTOs.Articles;
 using Blog.Entity.Entities;
 
 namespace Blog.Service.AutoMapper

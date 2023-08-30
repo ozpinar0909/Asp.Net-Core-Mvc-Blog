@@ -20,6 +20,7 @@ namespace Blog.Dal.Mappings
                 CreatedTime = DateTime.Now,
                 ImageId = Guid.Parse("184BAF77-DE82-4DA0-8D25-7CC577FB58C1"),
                 IsDeleted = false,
+                UserId = new Guid("643B7BCC-E8AB-4321-A7EB-0E3D3D88795B"),
             },
             new Article
             {
@@ -32,6 +33,7 @@ namespace Blog.Dal.Mappings
                 CreatedBy = "Admin Test1",
                 CreatedTime = DateTime.Now,
                 IsDeleted = false,
+                UserId = Guid.Parse("3B60065E-88F1-4A31-9F2B-5E40306DBD06"),
             });
         }
     }

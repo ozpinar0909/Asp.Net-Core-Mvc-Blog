@@ -1,8 +1,11 @@
 ﻿using Blog.Service.Services.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Blog.Web.Areas.Admin.Controllers
 {
+    [Area("Admin")]
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly IArticleService article;
@@ -11,7 +14,7 @@ namespace Blog.Web.Areas.Admin.Controllers
         {
             this.article = article;
         }
-        [Area("Admin")]
+
         public async Task<IActionResult> Index()
         {
             var articles = await article.GetAllArticleSync();

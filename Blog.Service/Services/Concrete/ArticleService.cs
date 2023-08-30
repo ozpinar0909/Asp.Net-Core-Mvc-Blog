@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Blog.Dal.UnitOfWorks.Abstract;
-using Blog.Entity.DTOs;
+using Blog.Entity.DTOs.Articles;
 using Blog.Entity.Entities;
 using Blog.Service.Services.Abstract;
 

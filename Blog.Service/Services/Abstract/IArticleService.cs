@@ -1,4 +1,4 @@
-﻿using Blog.Entity.DTOs;
+﻿using Blog.Entity.DTOs.Articles;
 
 namespace Blog.Service.Services.Abstract
 {
