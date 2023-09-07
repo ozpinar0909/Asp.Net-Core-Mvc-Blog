@@ -2,7 +2,7 @@
 using Blog.Entity.DTOs.Articles;
 using Blog.Entity.Entities;
 
-namespace Blog.Service.AutoMapper
+namespace Blog.Service.AutoMapper.Articles
 {
     public class ArticleProfile : Profile
     {

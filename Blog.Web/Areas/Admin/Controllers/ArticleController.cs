@@ -1,13 +1,21 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Blog.Service.Services.Abstract;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Blog.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class ArticleController : Controller
     {
-        public IActionResult Index()
+        private readonly IArticleService articleService;
+
+        public ArticleController(IArticleService articleService)
         {
-            return View();
+            this.articleService = articleService;
+        }
+        public async Task<IActionResult> Index()
+        {
+            var article = await articleService.GetAllArticlesWithCategoryNonDeletedAsync();
+            return View(article);
         }
     }
 }

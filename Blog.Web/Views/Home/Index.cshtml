@@ -1,5 +1,4 @@
-﻿
-@model List<ArticleDto>
+﻿@model List<ArticleDto>
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -9,10 +8,11 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-@foreach(var article in Model)
+@foreach (var article in Model)
 {
-    <h1>@article.Title </h1><br />
-    <h4>@article.Content</h4>
+    <h1>@article.Title </h1>
+    <br />
+    @* <h4>@article.Content</h4> *@
     <h4>@article.CreatedBy</h4>
     <br />
     <br />
