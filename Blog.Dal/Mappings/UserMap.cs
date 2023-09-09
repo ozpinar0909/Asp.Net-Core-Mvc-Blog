@@ -44,7 +44,7 @@ namespace Blog.Dal.Mappings
             builder.HasMany<AppUserRole>().WithOne().HasForeignKey(ur => ur.UserId).IsRequired();
             var superadmin = new AppUser
             {
-                Id = new Guid("643B7BCC-E8AB-4321-A7EB-0E3D3D88795B"),
+                Id = Guid.Parse("643B7BCC-E8AB-4321-A7EB-0E3D3D88795B"),
                 UserName = "ozpinar09@gmail.com",
                 NormalizedEmail = "OZPINAR09@GMAIL.COM",
                 Email = "ozpinar09@gmail.com",
