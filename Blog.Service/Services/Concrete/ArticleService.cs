@@ -55,6 +55,16 @@ namespace Blog.Service.Services.Concrete
             await unitOfwork.SaveAsync();
 
         }
+        public async Task SafeDeleteArticleAsync(Guid articleId)
+        {
+            var article = await unitOfwork.GetRepository<Article>().GetGuidAsync(articleId);
+            article.IsDeleted = true;
+            article.DeletedTime = DateTime.Now;
+            await unitOfwork.GetRepository<Article>().UpdateAsync(article);
+            await unitOfwork.SaveAsync();
+
+
+        }
 
     }
 }
