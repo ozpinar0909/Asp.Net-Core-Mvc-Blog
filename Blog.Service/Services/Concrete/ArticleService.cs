@@ -39,7 +39,7 @@ namespace Blog.Service.Services.Concrete
             return map;
         }
         //Güncelleme metotu
-        public async Task UpdateArticleAsync(ArticleUpdateDto articleUpdateDto)
+        public async Task<string> UpdateArticleAsync(ArticleUpdateDto articleUpdateDto)
         {
             var article = await unitOfwork.GetRepository<Article>().GetAsync(x => !x.IsDeleted && x.Id == articleUpdateDto.Id, x => x.Category);
             article.Title = articleUpdateDto.Title;
@@ -48,6 +48,7 @@ namespace Blog.Service.Services.Concrete
 
             await unitOfwork.GetRepository<Article>().UpdateAsync(article);
             await unitOfwork.SaveAsync();
+            return article.Title;
 
         }
         public async Task SafeDeleteArticleAsync(Guid articleId)

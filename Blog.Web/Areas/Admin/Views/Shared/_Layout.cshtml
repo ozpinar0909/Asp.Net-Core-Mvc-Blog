@@ -272,6 +272,7 @@
     <!-- Vendors JS -->
     <script src="~/sneat/assets/vendor/libs/apex-charts/apexcharts.js"></script>
     @await RenderSectionAsync("Scripts",false)
+    @await Component.InvokeAsync("NToastNotify")
     <!-- Main JS -->
     <script src="~/sneat/assets/js/main.js"></script>
 
