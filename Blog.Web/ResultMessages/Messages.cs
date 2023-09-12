@@ -12,6 +12,10 @@
             {
                 return $"{articleTitle} başlıklı makale başarıyla güncellenmiştir.";
             }
+            public static string Delete(string articleTitle)
+            {
+                return $"{articleTitle} başlıklı makale başarıyla silinmiştir.";
+            }
         }
     }
 }

@@ -80,6 +80,7 @@ namespace Blog.Web.Areas.Admin.Controllers
             {
                 var title = await articleService.UpdateArticleAsync(articleUpdateDto);
                 toast.AddSuccessToastMessage(Messages.Article.Update(title), new ToastrOptions { Title = "Başarılı" });
+                return RedirectToAction("Index", "Article", new { Area = "Admin" });
             }
             else
             {
@@ -95,7 +96,8 @@ namespace Blog.Web.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(Guid articleId)
         {
-            await articleService.SafeDeleteArticleAsync(articleId);
+            var title = await articleService.SafeDeleteArticleAsync(articleId);
+            toast.AddSuccessToastMessage(Messages.Article.Delete(title), new ToastrOptions { Title = "Başarılı" });
             return RedirectToAction("Index", "Article", new { Area = "Admin" });
         }
 
